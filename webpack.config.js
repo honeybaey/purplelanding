@@ -20,7 +20,7 @@ module.exports = {
     }
   }, */
   devServer: {
-    openPage: ["landing-page.html"]
+    openPage: ["index.html"]
   },
   module: {
     rules: [
