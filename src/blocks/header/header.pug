@@ -1,0 +1,44 @@
+//- include ../btn/btn
+
+mixin header(params)
+  - const { menuItems, href } = params;
+
+  header.header
+    .header__nav.container
+      .header__logo
+        a(href='#' class='header__logo-link') Logo
+      nav.header__menu
+        ul.header__menu-list
+          each menuItem in menuItems
+            - const { name, href, submenu } = menuItem;
+
+            li.header__menu-item
+              a.header__menu-link(href=href)=name
+
+                if submenu
+                  ul.header__submenu
+
+                    each submenuItem in submenu
+                      - const { name, href } = submenu;
+
+                      li.header__submenu-item
+                        a.header__submenu-link(href=href)=name
+      section.header__description
+        h1 Branding and UI/UX design agency
+        p We provide cutting edge solutions that make you Visible!
+
+      //- if isLoggedIn
+      //-   .header__user.header__user_logged
+      //-     span.header__username=userName
+      //- else
+      //-   .header__user
+      //-     +btn({
+      //-         className: 'btn btn_border-header btn_header',
+      //-         label: 'Войти',
+      //-         href: 'login.html',
+      //-       })
+      //-     +btn({
+      //-         className: 'btn btn_header',
+      //-         label: 'Зарегистрироваться',
+      //-         href: 'registration.html',
+      //-       })

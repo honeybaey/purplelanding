@@ -1,0 +1,95 @@
+.header {
+  background-image: url("../blocks/header/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__logo {
+    grid-area: logo;
+    margin-right: auto;
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Poppins";
+      text-transform: lowercase;
+      font-size: 2.25rem;
+    }
+  }
+  &__nav {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-areas:
+      "logo menu"
+      "user menu";
+    min-height: 70px;
+    padding: 14px 0;
+
+    @media (min-width: $screen-md) {
+      align-items: center;
+    }
+
+    @media (max-width: $screen-xl) {
+      grid-template-areas:
+        "logo user"
+        "menu menu";
+    }
+
+    @media (min-width: $screen-xl) {
+      grid-template-areas: "logo menu user";
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 30px;
+    }
+  }
+  &__menu {
+    grid-area: menu;
+    justify-self: end;
+
+    @media (max-width: $screen-xl) {
+      justify-self: center;
+      padding-top: 5px;
+    }
+  }
+  &__menu-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 7px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: $screen-md) {
+      grid-auto-flow: column;
+      grid-gap: 22px;
+    }
+
+    @media (min-width: $screen-xl) {
+      grid-gap: 22px;
+    }
+  }
+  &__menu-item {
+    text-align: left;
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
+  }
+  &__menu-link {
+    font-family: Montserrat;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+
+    @media (max-width: 375px) {
+      padding: 0;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__description {
+    margin: 0 auto;
+  }
+}
