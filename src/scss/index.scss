@@ -1,0 +1,56 @@
+@import "../blocks/header/header.scss";
+@import "../blocks/btn/btn.scss";
+
+.features {
+  &__title {
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin: 70px 0 140px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 77px;
+      height: 8px;
+      right: 0;
+      margin: 10px auto 0 auto;
+      display: block;
+      background-color: #5a4496;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__item {
+    text-align: center;
+    max-width: 118px;
+
+    /* приподнять 3 иконку для более равномерного строя */
+
+    // &:nth-of-child(4) {
+    //   padding-bottom: 20px;
+    // }
+  }
+
+  &__text {
+    font-size: 1.3125rem;
+    color: #262626;
+    opacity: 0.74;
+    font-weight: bold;
+    font-family: Montserrat;
+  }
+
+  &__icon {
+
+    &_fixed-height {
+      padding-bottom: 20px;
+    }
+  }
+}

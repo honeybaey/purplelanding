@@ -1,0 +1,7 @@
+mixin btn(params)
+
+  - const { className, href, label } = params;
+
+  .btn-wrapper
+    a(class=className href=href)
+      span.btn__label=label
