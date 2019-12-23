@@ -1,4 +1,4 @@
-//- include ../btn/btn
+include ../btn/btn
 
 mixin header(params)
   - const { menuItems, href } = params;
@@ -14,31 +14,12 @@ mixin header(params)
 
             li.header__menu-item
               a.header__menu-link(href=href)=name
+      +btn({
+          className: 'btn',
+          label: 'Request a Quote',
+          href: '#',
+        })
 
-                if submenu
-                  ul.header__submenu
-
-                    each submenuItem in submenu
-                      - const { name, href } = submenu;
-
-                      li.header__submenu-item
-                        a.header__submenu-link(href=href)=name
-      section.header__description
-        h1 Branding and UI/UX design agency
-        p We provide cutting edge solutions that make you Visible!
-
-      //- if isLoggedIn
-      //-   .header__user.header__user_logged
-      //-     span.header__username=userName
-      //- else
-      //-   .header__user
-      //-     +btn({
-      //-         className: 'btn btn_border-header btn_header',
-      //-         label: 'Войти',
-      //-         href: 'login.html',
-      //-       })
-      //-     +btn({
-      //-         className: 'btn btn_header',
-      //-         label: 'Зарегистрироваться',
-      //-         href: 'registration.html',
-      //-       })
+    section.header__description
+      h1.header__description-title Branding and UI/UX design agency
+      p.header__description-text We provide cutting edge solutions that make you Visible!
