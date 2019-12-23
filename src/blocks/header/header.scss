@@ -1,8 +1,11 @@
+@import "../btn/btn.scss";
+
 .header {
   background-image: url("../blocks/header/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 500px;
   &__logo {
     grid-area: logo;
     margin-right: auto;
@@ -12,32 +15,33 @@
       color: #fff;
       font-family: "Poppins";
       text-transform: lowercase;
-      font-size: 2.25rem;
+      font-size: 2.375rem;
+      font-weight: bold;
     }
   }
   &__nav {
     display: grid;
     grid-gap: 6px;
     grid-template-areas:
-      "logo menu"
-      "user menu";
-    min-height: 70px;
-    padding: 14px 0;
+      "logo menu btn"
+      "descr descr descr";
+    padding-top: 60px;
 
     @media (min-width: $screen-md) {
       align-items: center;
     }
 
-    @media (max-width: $screen-xl) {
-      grid-template-areas:
-        "logo user"
-        "menu menu";
-    }
+    // @media (max-width: $screen-xl) {
+    //   grid-template-areas:
+    //     "logo user"
+    //     "menu menu";
+    // }
 
     @media (min-width: $screen-xl) {
-      grid-template-areas: "logo menu user";
+      grid-template-areas: "logo menu btn";
       grid-template-columns: auto 1fr auto;
       grid-gap: 30px;
+      margin-bottom: 158px;
     }
   }
   &__menu {
@@ -63,7 +67,7 @@
     }
 
     @media (min-width: $screen-xl) {
-      grid-gap: 22px;
+      grid-gap: 55px;
     }
   }
   &__menu-item {
@@ -75,10 +79,9 @@
   }
   &__menu-link {
     font-family: Montserrat;
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-decoration: none;
     color: #fff;
-    padding: 4px;
 
     @media (max-width: 375px) {
       padding: 0;
@@ -90,6 +93,20 @@
   }
 
   &__description {
-    margin: 0 auto;
+    grid-area: descr;
+    font-family: Montserrat;
+    color: #fff;
+    text-align: center;
+
+    &-title {
+      margin: 0;
+      font-size: 2.25rem;
+    }
+
+    &-text {
+      text-align: center;
+      opacity: 0.6;
+      font-size: 1.1875rem;
+    }
   }
 }
