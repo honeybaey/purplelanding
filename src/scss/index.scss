@@ -2,12 +2,15 @@
 @import "../blocks/btn/btn.scss";
 
 .features {
+  margin-top: 70px;
+  padding-bottom: 120px;
+
   &__title {
     text-align: center;
     font-family: "Montserrat";
     font-weight: bold;
     font-size: 2.25rem;
-    margin: 70px 0 140px 0;
+    margin: 0 0 130px 0;
 
     &::after {
       content: "";
@@ -24,19 +27,14 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
+    margin-bottom: 75px;
   }
 
   &__item {
     text-align: center;
     max-width: 118px;
-
-    /* приподнять 3 иконку для более равномерного строя */
-
-    // &:nth-of-child(4) {
-    //   padding-bottom: 20px;
-    // }
   }
 
   &__text {
@@ -48,9 +46,57 @@
   }
 
   &__icon {
+    margin-bottom: 15px;
 
     &_fixed-height {
       padding-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.metrics {
+  padding-top: 80px;
+  background-color: #5b439c;
+  font-family: Montserrat;
+  padding-bottom: 70px;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    margin-right: 35px;
+  }
+
+  &__number {
+    opacity: 0.27;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 1.875rem;
+    text-align: center;
+    margin: 0;
+
+    &::after {
+      content: "";
+      /* position: absolute;
+      left: 0;
+      right: 0; */
+      width: 109px;
+      height: 2px;
+      margin: 20px auto 0 auto;
+      display: block;
+      background-color: #1da7ff;
     }
   }
 }
