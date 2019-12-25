@@ -17,7 +17,6 @@
   max-height: 32px;
   height: 100%;
   text-align: center;
-  outline: none;
   text-decoration: none;
 
   &:hover {
@@ -33,5 +32,16 @@
     background: #fff;
     color: #1da7ff;
     box-shadow: 0 0 0 1px #1da7ff;
+  }
+
+  &_large {
+    padding: 17px 40px 17px 40px;
+    font-size: 1.3125rem;
+    max-height: 56px;
+    height: 100%;
+  }
+
+  &_features {
+    margin-right: 30px;
   }
 }
