@@ -2,6 +2,7 @@ extends template
 
 include ../blocks/header/header
 include ../blocks/socials/socials
+include ../blocks/btn/btn
 
 block content
   +header({
@@ -26,6 +27,28 @@ block content
       .features__item
         img(class='features__icon' src='../img/icon4.png')
         p.features__text Updated Tech Stack
+    .features__btn
+      +btn({
+        className: 'btn btn_features btn_large',
+        label: 'Request a Quote',
+        href: '#'
+      })
+      +btn({
+        className: 'btn btn_light btn_large',
+        label: 'Learn More',
+        href: '#'
+      })
+  section.metrics
+    .metrics__list.container
+      .metrics__item
+        span.metrics__number 200+
+        p.metrics__title Projects
+      .metrics__item
+        span.metrics__number 32150+
+        p.metrics__title Hours
+      .metrics__item
+        span.metrics__number 80+
+        p.metrics__title Awards
       
 
 
