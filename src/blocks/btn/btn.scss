@@ -23,7 +23,11 @@
     opacity: 0.8;
   }
 
-  &-wrapper {
+  &__wrapper {
+    display: inline-block;
+  }
+
+  &__wrapper-header {
     grid-area: btn;
     justify-self: end;
   }
@@ -43,5 +47,12 @@
 
   &_features {
     margin-right: 30px;
+  }
+
+  &_subscription {
+    max-height: 34px;
+    padding-top: 11px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
   }
 }
