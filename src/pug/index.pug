@@ -3,6 +3,7 @@ extends template
 include ../blocks/header/header
 include ../blocks/socials/socials
 include ../blocks/btn/btn
+include ../blocks/subscription-field/subscription-field
 
 block content
   +header({
@@ -62,7 +63,7 @@ block content
         img(class='clients__img' src='../img/affregato_logo.svg')
       .clients__item
         img(class='clients__img' src='../img/oneshot_logo.svg')
-        
-      
+  section.subscription
+    +subscription-field('Want weekly newsletter delivered to your inbox?', 'Your Email Address')
 
 
