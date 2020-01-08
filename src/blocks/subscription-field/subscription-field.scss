@@ -1,5 +1,4 @@
 .subscription-field {
-
   &__wrapper {
     max-width: 510px;
     text-align: center;
@@ -25,6 +24,7 @@
     border-radius: 16px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    box-sizing: border-box;
     max-width: 354px;
     width: 100%;
     padding-left: 36px;
