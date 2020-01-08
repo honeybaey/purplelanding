@@ -1,5 +1,6 @@
 @import "../blocks/header/header.scss";
 @import "../blocks/btn/btn.scss";
+@import "../blocks/subscription-field/subscription-field.scss";
 
 .features {
   margin-top: 70px;
@@ -141,4 +142,9 @@
     max-height: 87px;
     height: 100%;
   }
+}
+
+.subscription {
+  background: #5b439c;
+  padding: 75px 0 75px 0;
 }
