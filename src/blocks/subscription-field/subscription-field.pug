@@ -1,0 +1,12 @@
+include ../btn/btn
+
+mixin subscription-field(text, name)
+
+  .subscription-field__wrapper.container
+    p.subscription-field__text=text
+    input(type="email" class='subscription-field__input' placeholder=name)
+    +btn({
+      className: 'btn btn_subscription',
+      label: 'Subscribe',
+      href: '#',
+    })

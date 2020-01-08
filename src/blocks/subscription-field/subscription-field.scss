@@ -1,0 +1,35 @@
+.subscription-field {
+
+  &__wrapper {
+    max-width: 510px;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: Montserrat;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.3125rem;
+    margin-bottom: 27px;
+  }
+
+  &__input {
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    max-width: 354px;
+    width: 100%;
+    padding-left: 36px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    margin-right: -4px;
+  }
+}
