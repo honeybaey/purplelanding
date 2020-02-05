@@ -1,6 +1,7 @@
 @import "../blocks/header/header.scss";
 @import "../blocks/btn/btn.scss";
 @import "../blocks/subscription-field/subscription-field.scss";
+@import '../blocks/features__item/features__item.scss';
 
 .features {
   margin-top: 70px;
@@ -31,27 +32,6 @@
     justify-content: space-around;
     align-items: baseline;
     margin-bottom: 75px;
-  }
-
-  &__item {
-    text-align: center;
-    max-width: 118px;
-  }
-
-  &__text {
-    font-size: 1.3125rem;
-    color: #262626;
-    opacity: 0.74;
-    font-weight: bold;
-    font-family: Montserrat;
-  }
-
-  &__icon {
-    margin-bottom: 15px;
-
-    &_fixed-height {
-      padding-bottom: 20px;
-    }
   }
 
   &__btn {
