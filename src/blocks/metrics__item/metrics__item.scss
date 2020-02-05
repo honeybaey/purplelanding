@@ -1,0 +1,32 @@
+.metrics {
+
+  &__item {
+    margin-right: 35px;
+  }
+
+  &__number {
+    opacity: 0.27;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 1.875rem;
+    text-align: center;
+    margin: 0;
+
+    &::after {
+      content: "";
+      /* position: absolute;
+      left: 0;
+      right: 0; */
+      width: 109px;
+      height: 2px;
+      margin: 20px auto 0 auto;
+      display: block;
+      background-color: #1da7ff;
+    }
+  }
+}
