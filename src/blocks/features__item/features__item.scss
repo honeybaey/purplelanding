@@ -1,0 +1,24 @@
+.features {
+
+  &__item {
+    text-align: center;
+    max-width: 118px;
+  }
+
+  &__text {
+    font-size: 1.3125rem;
+    color: #262626;
+    opacity: 0.74;
+    font-weight: bold;
+    font-family: Montserrat;
+  }
+
+  &__icon {
+    margin-bottom: 15px;
+
+    &_fixed-height {
+      padding-bottom: 20px;
+    }
+  }
+  
+}
