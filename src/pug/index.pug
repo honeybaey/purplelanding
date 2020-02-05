@@ -6,6 +6,7 @@ include ../blocks/btn/btn
 include ../blocks/subscription-field/subscription-field
 include ../blocks/features__item/features__item
 include ../blocks/metrics__item/metrics__item
+include ../blocks/clients__item/clients__item
 
 block content
   +header({
@@ -41,16 +42,11 @@ block content
   section.clients
     h1.clients__title Our Valuable Clients
     .clients__list.container
-      .clients__item
-        img(class='clients__img' src='../img/upside_logo.png')
-      .clients__item
-        img(class='clients__img' src='../img/arrow_logo.svg')
-      .clients__item
-        img(class='clients__img' src='../img/tm_logo.svg')
-      .clients__item
-        img(class='clients__img' src='../img/affregato_logo.svg')
-      .clients__item
-        img(class='clients__img' src='../img/oneshot_logo.svg')
+      +clients__item('upside')
+      +clients__item('arrow')
+      +clients__item('tm')
+      +clients__item('affregato')
+      +clients__item('oneshot')
   section.subscription
     +subscription-field('Want weekly newsletter delivered to your inbox?', 'Your Email Address')
 
