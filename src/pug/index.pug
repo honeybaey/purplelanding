@@ -5,6 +5,7 @@ include ../blocks/socials/socials
 include ../blocks/btn/btn
 include ../blocks/subscription-field/subscription-field
 include ../blocks/features__item/features__item
+include ../blocks/metrics__item/metrics__item
 
 block content
   +header({
@@ -34,15 +35,9 @@ block content
       })
   section.metrics
     .metrics__list.container
-      .metrics__item
-        span.metrics__number 200+
-        p.metrics__title Projects
-      .metrics__item
-        span.metrics__number 32150+
-        p.metrics__title Hours
-      .metrics__item
-        span.metrics__number 80+
-        p.metrics__title Awards
+      +metrics__item('200+', 'Projects')
+      +metrics__item('32150+', 'Hours')
+      +metrics__item('80+', 'Awards')
   section.clients
     h1.clients__title Our Valuable Clients
     .clients__list.container
