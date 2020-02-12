@@ -7,6 +7,7 @@ include ../blocks/subscription-field/subscription-field
 include ../blocks/features__item/features__item
 include ../blocks/metrics__item/metrics__item
 include ../blocks/clients__item/clients__item
+include ../blocks/footer/footer
 
 block content
   +header({
@@ -49,5 +50,4 @@ block content
       +clients__item('oneshot')
   section.subscription
     +subscription-field('Want weekly newsletter delivered to your inbox?', 'Your Email Address')
-
-
+  +footer
