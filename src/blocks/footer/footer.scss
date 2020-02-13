@@ -1,0 +1,66 @@
+@import '../socials/socials.scss';
+
+.footer {
+  background-color: #1c1b24;
+  padding: 55px 0 51px 0;
+
+  &-wrapper {
+    display: grid;
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 55px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      max-width: 815px;
+      height: 1px;
+      right: 0;
+      margin: 80px auto 0 auto;
+      display: block;
+      background-color: #76757e;
+      opacity: 0.6;
+    }
+  }
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+
+  &__item {
+    display: flex;
+    margin-top: 45px;
+  }
+
+  &__item-icon {
+    max-width: 53px;
+    margin-right: 25px;
+  }
+
+  &__item-text {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+  }
+
+  &__item-descr {
+    color: rgba(255, 255, 255, 0.45);
+    font-family: Roboto;
+    font-size: 0.6875rem;
+  }
+}
