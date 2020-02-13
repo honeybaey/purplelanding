@@ -1,27 +1,32 @@
+include ../socials/socials
+
 mixin footer()
 
   footer.footer
-    .container
-      .footer__logo
-        a(href='#' class='footer__logo-link') Logo6
-      +footer__item({
-        text: 'Request a Quote',
-        description: 'Schedule here',
-        alt: 'work time',
-        logoName: 'work_time'
-      })
-      +footer__item({
-        text: 'hello@vijayverma.co',
-        description: 'online quotation',
-        alt: 'email',
-        logoName: 'email'
-      })
-      +footer__item({
-        text: 'New Delhi, India',
-        description: 'Office Location',
-        alt: 'location',
-        logoName: 'location'
-      })
+    .footer-wrapper.container
+      .footer-top
+        .footer__logo
+          a(href='#' class='footer__logo-link') Logo6
+        +socials
+      .footer-main
+        +footer__item({
+          text: 'Request a Quote',
+          description: 'Schedule here',
+          alt: 'work time',
+          logoName: 'work_time'
+        })
+        +footer__item({
+          text: 'hello@vijayverma.co',
+          description: 'online quotation',
+          alt: 'email',
+          logoName: 'email'
+        })
+        +footer__item({
+          text: 'New Delhi, India',
+          description: 'Office Location',
+          alt: 'location',
+          logoName: 'location'
+        })
 
 mixin footer__item(params)
 
@@ -30,5 +35,6 @@ mixin footer__item(params)
   .footer__item
     .footer__icon-wrap
       img(class='footer__item-icon' src=require(`../blocks/footer/${logoName}.png`), alt=`${alt}`)
-    p.footer__item-text=text
-    span.footer__item-descr=description
+    .footer__item-info
+      p.footer__item-text=text
+      span.footer__item-descr=description
