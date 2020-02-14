@@ -4,31 +4,12 @@
 @import '../blocks/features__item/features__item.scss';
 @import '../blocks/metrics__item/metrics__item.scss';
 @import '../blocks/clients__item/clients__item.scss';
+@import '../blocks/works/works.scss';
 @import '../blocks/footer/footer.scss';
 
 .features {
   margin-top: 70px;
   padding-bottom: 120px;
-
-  &__title {
-    text-align: center;
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 2.25rem;
-    margin: 0 0 130px 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 77px;
-      height: 8px;
-      right: 0;
-      margin: 10px auto 0 auto;
-      display: block;
-      background-color: #5a4496;
-    }
-  }
 
   &__list {
     display: flex;
@@ -59,26 +40,6 @@
 .clients {
   margin-top: 110px;
   padding-bottom: 120px;
-
-  &__title {
-    text-align: center;
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 2.25rem;
-    margin: 0 0 105px 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 77px;
-      height: 8px;
-      right: 0;
-      margin: 10px auto 0 auto;
-      display: block;
-      background-color: #5a4496;
-    }
-  }
 
   &__list {
     display: flex;
