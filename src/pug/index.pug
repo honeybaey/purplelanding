@@ -8,6 +8,7 @@ include ../blocks/features__item/features__item
 include ../blocks/metrics__item/metrics__item
 include ../blocks/clients__item/clients__item
 include ../blocks/footer/footer
+include ../blocks/works/works
 
 block content
   +header({
@@ -18,7 +19,7 @@ block content
       ], 
   })
   section.features.container
-    h1.features__title Our Features
+    h1.features__title.title Our Features
     .features__list
       +features__item('Domain Expert', 'icon1')
       +features__item('Cost Effective', 'icon2')
@@ -40,8 +41,30 @@ block content
       +metrics__item('200+', 'Projects')
       +metrics__item('32150+', 'Hours')
       +metrics__item('80+', 'Awards')
+  section.works
+    .works-wrapper.container
+      h1.works__title.title Our Works
+      //- +works-slider
+      +works__item({
+        img: 'works-1',
+        alt: 'works1',
+        sector: 'Web Design',
+        title: 'Maria Ferrero Portfolio',
+      })
+      +works__item({
+        img: 'works-1',
+        alt: 'works2',
+        sector: 'UI/UX, Development',
+        title: 'Zikan Mobile App',
+      })
+      +works__item({
+        img: 'works-3',
+        alt: 'works3',
+        sector: 'UI/UX, Development',
+        title: 'Quzica Mobile App',
+      })
   section.clients
-    h1.clients__title Our Valuable Clients
+    h1.clients__title.title Our Valuable Clients
     .clients__list.container
       +clients__item('upside')
       +clients__item('arrow')
