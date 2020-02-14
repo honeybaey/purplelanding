@@ -1,0 +1,45 @@
+// @import 'slick.css';
+
+.works__item {
+  max-width: 253px;
+  width: 100%;
+  max-height: 293px;
+  height: 100%;
+  box-shadow: 0px 7px 12px 0.4px rgba(76, 76, 76, 0.16);
+  border: solid 1px #ebebeb;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+
+    &-img {
+    max-width: 253px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  &-info {
+    padding: 10px 0 23px 23px;
+  }
+
+  &-sector {
+    font-family: Roboto;
+    font-size: 0.6563rem;
+    color: rgba(49, 49, 49, 0.65);
+  }
+
+  &-title {
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    color: #313131;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+  }
+
+  &-about {
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 0.6875rem;
+  }
+}
