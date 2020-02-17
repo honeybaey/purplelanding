@@ -1,24 +1,29 @@
-//- mixin works-slider()
+include works__item/works__item
 
-//-   .works-slider
-//-     div
-//-       h1 1
-//-     div
-//-       h1 2
-//-     div
-//-       h1 3
-//-     div
-//-       h1 4
+mixin works-slider()
 
-
-mixin works__item(params)
-
-  - const { img, alt, sector, title } = params;
-
-  .works__item
-    .works__item-img
-      img(class='works__item-img' src=require(`../blocks/works/${img}.png`), alt=`${alt}`)
-    .works__item-info
-      span.works__item-sector=sector
-      p.works__item-title=title
-      span.works__item-about case study →
+  .works-slider
+    +works__item({
+      img: 'works-1',
+      alt: 'works1',
+      sector: 'Web Design',
+      title: 'Maria Ferrero Portfolio',
+    })
+    +works__item({
+      img: 'works-1',
+      alt: 'works2',
+      sector: 'UI/UX, Development',
+      title: 'Zikan Mobile App',
+    })
+    +works__item({
+      img: 'works-3',
+      alt: 'works3',
+      sector: 'UI/UX, Development',
+      title: 'Quzica Mobile App',
+    })
+    +works__item({
+      img: 'works-3',
+      alt: 'works3',
+      sector: 'UI/UX, Development',
+      title: 'Quzica Mobile App',
+    })
