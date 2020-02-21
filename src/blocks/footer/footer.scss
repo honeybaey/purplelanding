@@ -31,6 +31,10 @@
   &-main {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-flow: column;
+    }
   }
 
   &__logo-link {
@@ -44,6 +48,16 @@
   &__item {
     display: flex;
     margin-top: 45px;
+
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (max-width: 767px) {
+      margin-left: 30px;
+    }
   }
 
   &__item-icon {
