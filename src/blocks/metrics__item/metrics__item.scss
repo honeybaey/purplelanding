@@ -3,7 +3,7 @@
   &__item {
     margin-right: 35px;
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-md) {
       margin: 0 0 35px 0;
     }
   }

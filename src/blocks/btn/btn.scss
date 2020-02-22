@@ -28,7 +28,7 @@
   }
 
   &__wrapper:nth-child(1) {
-    @media (max-width: 768px) {
+    @media (max-width: $screen-md) {
       margin: 0 0 15px 0;
     }
   }
@@ -58,7 +58,7 @@
   &_features {
     margin-right: 30px;
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-md) {
       margin-right: 0;
     }
   }
