@@ -11,16 +11,32 @@
   margin-top: 70px;
   padding-bottom: 120px;
 
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    padding-bottom: 40px;
+  }
+
   &__list {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     margin-bottom: 75px;
+
+    @media (max-width: 768px) {
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 45px;
+    }
   }
 
   &__btn {
     display: flex;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      flex-flow: column;
+      align-items: center;
+    }
   }
 }
 
@@ -30,9 +46,18 @@
   font-family: Montserrat;
   padding-bottom: 70px;
 
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+
   &__list {
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: 768px) {
+      flex-flow: column;
+      align-items: center;
+    }
   }
 
 }
@@ -41,18 +66,23 @@
   margin-top: 110px;
   padding-bottom: 120px;
 
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 768) {
+    @media (max-width: 768px) {
       justify-content: center;
     }
 
-    // @media (max-width:) {
-    //   justify-content: center;
-    // }
+    @media (max-width: 500px) {
+      flex-flow: column;
+    }
   }
 }
 

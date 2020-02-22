@@ -27,9 +27,19 @@
     display: inline-block;
   }
 
+  &__wrapper:nth-child(1) {
+    @media (max-width: 768px) {
+      margin: 0 0 15px 0;
+    }
+  }
+
   &__wrapper-header {
     grid-area: btn;
     justify-self: end;
+
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
   }
 
   &_light {
@@ -47,6 +57,10 @@
 
   &_features {
     margin-right: 30px;
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
   }
 
   &_subscription {
