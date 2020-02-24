@@ -33,14 +33,6 @@
     }
   }
 
-  &__wrapper-header {
-    grid-area: btn;
-    justify-self: end;
-
-    @media (max-width: $screen-sm-max) {
-      display: none;
-    }
-  }
 
   &_light {
     background: #fff;
