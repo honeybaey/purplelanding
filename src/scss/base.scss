@@ -5,6 +5,13 @@ body {
   -moz-box-sizing: border-box;
 }
 
+body.lock {
+  @media (max-width: 768px) {
+    overflow: hidden;
+  }
+}
+
+
 .container {
   max-width: 815px;
   width: calc(100% - 16px);
