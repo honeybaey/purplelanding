@@ -14,11 +14,13 @@ mixin header(params)
 
             li.header__menu-item
               a.header__menu-link(href=href)=name
-      +btn({
-          className: 'btn btn__wrapper-header',
-          label: 'Request a Quote',
-          href: '#',
-        })
+          +btn({
+              className: 'btn btn__wrapper-header',
+              label: 'Request a Quote',
+              href: '#',
+            })
+      .header__burger-wrap
+        i.header__burger.fas.fa-bars
 
     section.header__description
       h1.header__description-title Branding and UI/UX design agency
