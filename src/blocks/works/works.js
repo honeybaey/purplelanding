@@ -1,16 +1,28 @@
-import 'jquery'
-import 'slick-carousel';
-import 'slick-carousel/slick/slick.scss';
-import 'slick-carousel/slick/slick-theme.scss';
+import "owl.carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
-$(document).ready(function(){
-  $('.works-slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    аccessibility: true,
-    arrows: true,
-    prevArrow: '<i class="fa fa-chevron-left prev-arrow" aria-hidden="true"></i>',
-    nextArrow: '<i class="fa fa-chevron-right next-arrow" aria-hidden="true"></i>'
+$(document).ready(function() {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    center: true,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 30
+      },
+      360: {
+        items: 1.5
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 3
+      }
+    },
+    navText: ["<i class='fa fa-chevron-left prev-arrow' aria-hidden='true'></i>", "<i class='fa fa-chevron-right next-arrow' aria-hidden='true'></i>"],
   });
 });
