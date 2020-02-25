@@ -8,7 +8,7 @@
 @import '../blocks/footer/footer.scss';
 
 .features {
-  margin-top: 70px;
+  margin-top: 65px;
   padding-bottom: 120px;
 
   @media (max-width: $screen-md) {
@@ -65,7 +65,7 @@
 
 .clients {
   margin-top: 110px;
-  padding-bottom: 120px;
+  padding-bottom: 105px;
 
   @media (max-width: $screen-md) {
     margin-top: 50px;
@@ -88,7 +88,7 @@
 }
 
 .works {
-  padding-top: 70px;
+  padding-top: 120px;
   padding-bottom: 140px;
   background-color: #e5e5e5;
 }
