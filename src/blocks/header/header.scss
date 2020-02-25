@@ -60,7 +60,7 @@
       padding-top: 5px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-md) {
       position: fixed;
       top: -150%;
       left: 0;
@@ -99,7 +99,7 @@
       grid-gap: 50px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-md) {
       display: block;
     }
   }
@@ -110,7 +110,7 @@
       text-align: left;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-md) {
       margin-bottom: 15px;
     }
   }
@@ -124,7 +124,7 @@
       padding: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-md) {
       font-size: 1.125rem;
     }
 
@@ -137,7 +137,7 @@
     display: none;
     z-index: 3;
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-md) {
       display: block;
       color: #fff;
       cursor: pointer;
