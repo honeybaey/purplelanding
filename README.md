@@ -1,8 +1,10 @@
+# Digital Studio Landing
+![Landing](https://i.ibb.co/SwSGMqb/2020-06-20-14-12-28.png)
 Отзывчивая, семантическая, кроссбраузерная верстка посадочной страницы.
 
 > [Макет](https://clck.ru/L3XM2)
 
-> [Готовая работа](https://honeybaey.github.io/purpleagency/)
+> [Демонстрация](https://honeybaey.github.io/purpleagency/)
 
 **Используемые технологии:** 
 
