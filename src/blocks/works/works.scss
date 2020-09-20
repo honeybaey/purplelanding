@@ -28,6 +28,10 @@
     left: -20px;
   }
 
+  @media (max-width: 667px) {
+    left: -5px;
+  }
+
   @media (max-width: 415px) {
     left: 0;
   }
@@ -51,6 +55,10 @@
 
   @media (max-width: $screen-md) {
     right: -20px;
+  }
+
+  @media (max-width: 667px) {
+    right: -5px;
   }
 
   @media (max-width: 415px) {
