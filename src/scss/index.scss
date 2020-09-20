@@ -1,3 +1,5 @@
+@import '~normalize.css';
+
 @import "../blocks/header/header.scss";
 @import "../blocks/btn/btn.scss";
 @import "../blocks/subscription-field/subscription-field.scss";
@@ -36,6 +38,12 @@
     @media (max-width: $screen-md) {
       flex-flow: column;
       align-items: center;
+    }
+
+    :nth-child(1) {
+      @media (max-width: $screen-md) {
+        margin: 0 0 15px 0;
+      }
     }
   }
 }
