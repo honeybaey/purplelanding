@@ -1,4 +1,4 @@
 mixin clients__item(logoName)
 
   .clients__item
-    img(class='clients__img' src=`../img/${logoName}_logo.svg`)
+    img(class='clients__img' alt=`${logoName}` src=require(`../blocks/clients__item/${logoName}_logo.png`))

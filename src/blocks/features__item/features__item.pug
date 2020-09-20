@@ -1,5 +1,5 @@
 mixin features__item(text, iconName)
 
   .features__item
-    img(class='features__icon' src=`../img/${iconName}.png`)
+    img(class='features__icon' alt=`${text}` src=require(`../blocks/features__item/${iconName}.png`))
     p.features__text=text
